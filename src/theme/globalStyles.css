@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Coda&family=Source+Serif+Pro:wght@300;400;600&display=swap");
+
+:root {
+  --sun-bg: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  --moon-bg: linear-gradient(40deg, #8983f7, #a3dafb 70%);
+}
+body.dark-mode {
+  --body-background: #26242e;
+  --text-color: white;
+  --text-color-inverse: black;
+  --link-color: #a3dafb;
+}
+body.light-mode {
+  --body-background: white;
+  --text-color: rgba(black, 0.85);
+  --text-color-inverse: white;
+  --link-color: coral;
+}
+[class^="ant-layout"],
+[class^="ant-layout"] {
+  box-sizing: border-box;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.Header {
+  margin-bottom: 2rem;
+}
+.Main {
+  flex: 1;
+  overflow-x: hidden;
+}
+.Footer {
+  margin-top: 2rem;
+}
+
+/* Container responsive */
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid {
+  width: 100%;
+  padding: 0 1rem;
+  overflow-x: hidden;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 1366px;
+  }
+}
